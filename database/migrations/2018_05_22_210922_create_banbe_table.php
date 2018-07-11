@@ -19,6 +19,7 @@ class CreateBanbeTable extends Migration
             $table->foreign('mathanhvien1')->references('mathanhvien')->on('thanhvien');
             $table->integer('mathanhvien2')->unsigned();
             $table->foreign('mathanhvien2')->references('mathanhvien')->on('thanhvien');
+            $table->boolean('ketnoi');
             $table->timestamps();
         });
     }

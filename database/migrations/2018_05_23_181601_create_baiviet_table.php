@@ -22,6 +22,7 @@ class CreateBaivietTable extends Migration
             $table->foreign('mathumuc')->references('mathumuc')->on('thumuc');
             $table->integer('mathanhvien')->unsigned();
             $table->foreign('mathanhvien')->references('mathanhvien')->on('thanhvien');
+            $table->boolean('kiemduyet');
             $table->timestamps();
         });
     }

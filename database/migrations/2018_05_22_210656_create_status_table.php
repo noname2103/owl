@@ -19,6 +19,7 @@ class CreateStatusTable extends Migration
             $table->foreign('mathanhvien')->references('mathanhvien')->on('thanhvien');
             $table->datetime('ngaygio');
             $table->text('noidung');
+            $table->string('hinhanh')->nullable();
             $table->integer('soyeuthich')->default(0);
             $table->integer('sobinhluan')->default(0);
             $table->timestamps();

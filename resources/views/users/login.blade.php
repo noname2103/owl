@@ -28,6 +28,8 @@
 	<div class="loginbox">
 		<div class="trailer">
 			<img src="images/banner3.jpg">
+			<i class="fa fa-chevron-left" id="prev"></i>
+			<i class="fa fa-chevron-right" id="next"></i>
 		</div>
 		<div class="login">
 			<form action="{{route('getlogin')}}" method="post">

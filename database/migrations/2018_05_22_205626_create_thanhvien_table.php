@@ -19,8 +19,8 @@ class CreateThanhvienTable extends Migration
             $table->string('matkhau');
             $table->string('email');
             $table->string('anhdaidien')->define('noavatar.png');
-            $table->date('ngaysinh')->nullable;
-            $table->string('diachi')->nullable;
+            $table->date('ngaysinh')->nullable();
+            $table->string('diachi')->nullable();
             $table->integer('xu')->default(0);
             $table->timestamps();
         });
